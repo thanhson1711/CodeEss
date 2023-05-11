@@ -1,0 +1,122 @@
+.login-form-css {
+    font-family: 'Lato';
+    width: 60%;
+    margin-left: 35%;
+    margin-right: 30%;
+    margin-top: 50px;
+    text-align: left;
+    padding-bottom: 350px;
+}
+
+.login-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #242F3E;
+}
+
+.txt-16{
+    font-size: 16px;
+}
+
+.empty{
+    display: block;
+    line-height: 1.5;
+    height: 5px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 558px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #263F4F;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.forgot-pass {
+    text-align: right;
+    letter-spacing: 0.0015em;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.login-terms {
+    position: absolute;
+    width: 560px;
+    top: 562px;
+    text-align: center;
+    color: #525252;
+    margin-top: 30px;
+}
+
+.remember-me-css{
+    width: 20px;
+    height: 20px;
+}
+
+.login-button-parent {
+    top: 650px;
+}
+
+.login-button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 558px;
+    height: 48px;
+    background: #9BBA5E;
+    border-color: #9BBA5E;
+    left: 0px;
+    color: #FFFFFF;
+}
+
+.login-terms1{
+    width: 560px;
+    top: 750px;
+    position: absolute;
+    text-align: center;
+}
+
+.register-txt {
+    letter-spacing: 0.0032em;
+    text-decoration-line: underline;
+    color: #008746;
+}
+
+/* ---------------------------------------------------------
+■ Forgot Password
+--------------------------------------------------------- */
+.forgot-pw-terms {
+    position: absolute;
+    width: 560px;
+    text-align: center;
+    color: #525252;
+}
+
+.forgot-pw-terms1{
+    width: 560px;
+    position: absolute;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------
+■ Create New Pass
+--------------------------------------------------------- */
+.note-password {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: 0.0015em;
+    color: #888888;
+}
+
+.toggle-password{
+    margin-left: -30px; 
+    cursor: pointer;
+}

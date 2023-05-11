@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Amado - Furniture Ecommerce Template | Home</title>
+
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Slick js -->
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script>
+        function AccountInfoChange(){
+            alert("Has Channged!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid p-0 overflow-hidden-mb">
+        <!-- Topbar Start -->
+        <header>
+            <div class="bg-header-title d-flex align-items-center">
+                <div class="d-lg-block w-100">
+                    <a class="w-100 d-flex align-items-center justify-content-center">Livraison offerte + cadeau dès
+                        45€² | -20% sur votre 1ère commande avec le code WELCOME³</a>
+                </div>
+            </div>
+            <div class="row align-items-center py-3 px-xl-5 p-0 w-100">
+                <div class="col-lg-4 col-xs-3 d-lg-block">
+                    <a class="text-decoration-none">
+                        <img src="css/image/Frame.png" alt="Essenciagua">
+                    </a>
+                </div>
+
+                <!-- Search taskbar -->
+                <div class="col-lg-4 col-xs-4 txt-search-parent">
+                    <form action="" class="txt-search-child">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-1 rounded-1" placeholder="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent text-primary border-0">
+                                    <i class="bi bi-search search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Search end -->
+
+                <!-- Button taskbar start -->
+
+                <div class="col-lg-4 col-xs-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="account-btn">
+                            <span class="bg-transparent text-primary icon-nav p-0">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <span class="account-text">Account</span>
+                        </div>
+                        <div class="cart-btn ms-5">
+                            <span class="bg-transparent text-primary icon-nav">
+                                <i class="bi bi-cart"></i>
+                            </span>
+                            <span class="cart_qty_cls amount" id="cart-item">5</span>
+                            <span class="cart-text">Cart</span>
+                        </div>
+                        <div class="dropdown ms-5 me-5 mt-3">
+                            <a class="dropdown-toggle text-dark" href="#" role="button" id="language"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/icon/en.png"> EN
+                            </a>
+                            <ul class="dropdown-menu shadow-lg" aria-labelledby="language">
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Button taskbar end -->
+            </div>
+
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid nav-size">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Essential Oils
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Blends</a></li>
+                                    <li><a class="dropdown-item" href="#">Unitary oils
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">The mixtures</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hydrolats
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+
+                                    <li><a class="dropdown-item" href="#">Our simple hydrolats</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Our blends of Hydrolats</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Massage Oils
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Macerates</a></li>
+                                    <li><a class="dropdown-item" href="#">Massage Oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Vegetable oils</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Assortments
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"> Boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Books</a></li>
+                                    <li><a class="dropdown-item" href="#">DIY boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Accessories (laboratory)</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Diffusers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Guide
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"> What are Essential oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Magali's words</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            The herbarium</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our brand
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Our story</a></li>
+                                    <li><a class="dropdown-item" href="#">Our commitments</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Our team</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Synergie</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Professional Space</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- breadcrumb -->
+        <section class="w-100 px-6 py-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">My Account</li>
+            </ol>
+        </section>
+
+        <!-- filter -->
+        <section class="w-100 px-6 filter" style="padding-bottom: 200px;">
+            <div class="row">
+                <!-- Left Side -->
+                <div class="col-md-3" style="padding-right: 80px;">
+                    <h2 class="fw-bold fs-5 lh-1.2 text-black mb-4">My Account</h2>
+                    <ul class="remove-padding-left">
+                        <li class="my-account-lbl">
+                            <span class="my-account-opt-clss">Acount Information</span>
+                        </li>
+                        <li class="my-account-lbl  my-account-seleted-lbl">
+                            <span class="my-account-opt-clss"></span>Addresses</span>
+                        </li>
+                        <li class="my-account-lbl">
+                            <span class="my-account-opt-clss"></span>Order History</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right Side -->
+                <div class="col-md-9 account-address">
+                    <div class="row">
+                        <div class="col-md account-address-header">
+                            <h2>ADDRESS LISTS</h2>
+                            <div class="account-address-header-button">
+                                <button type="button" class="btn btn-light"><i class="bi bi-plus-lg"></i>&nbsp;Add new address</button>
+                            </div>
+                        </div><br><br>
+                    </div>
+                    <div class="row">
+                        Choose your billing and delivery addresses. These will be pre-selected when you order. You can also add other addresses, which is particularly interesting for sending gifts or receiving your order at the office. 
+                        <br><span style="font-weight: bold; padding: 0px; margin: 0px;">Your addresses are listed below. </span>Remember to keep them up to date if they change.
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <table class="table address-lists-table">
+                            <thead>
+                                <tr class="address-lists-table-header">
+                                    <th scope="col" style="font-weight: 700;color: #898989; padding-left: 25px;">Title</th>
+                                    <th scope="col" style="font-weight: 700;color: #898989;">Fullname</th>
+                                    <th scope="col" style="font-weight: 700;color: #898989;">Phone number</th>
+                                    <th scope="col" style="font-weight: 700;color: #898989;">Address</th>
+                                    <th scope="col" style="font-weight: 700;color: #898989;">ZIP code</th>
+                                    <th scope="col" style="font-weight: 700;color: #898989; text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-weight: bold;">
+                                <tr style="height: 70px; vertical-align: middle; border-style: hidden;">
+                                    <th scope="row" style=" padding-left: 25px;">First Use</th>
+                                    <td>Nguyen Van Luong</td>
+                                    <td>777598866</td>
+                                    <td>09 Arizona, Delovice</td>
+                                    <td>12345</td>
+                                    <td style="text-align: center;"><span style="cursor:pointer; text-decoration: underline;">Update</span>&nbsp;&nbsp;<span style="cursor:pointer; text-decoration: underline;">Delete</span></td>
+                                </tr>
+                                <tr style="height: 70px; vertical-align: middle; border-style: hidden;">
+                                    <th scope="row" style=" padding-left: 25px;">Localize</th>
+                                    <td>Long Tran TNL</td>
+                                    <td>777598866</td>
+                                    <td>48 POst street, Zoom</td>
+                                    <td>12345</td>
+                                    <td style="text-align: center;"><span style="cursor:pointer; text-decoration: underline;">Update</span>&nbsp;&nbsp;<span style="cursor:pointer; text-decoration: underline;">Delete</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="footer-section spad w-100">
+        <section class="bg-footer position-relative">
+            <img src="./img/icon/Group.png" class="position-absolute bottom-0 end-0">
+            <div class="px-6 ">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Essential Oils</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Single</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Blends</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Unitary oils</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The mixtures</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Hydrolats</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our simple
+                                    hydrolats</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our blends of
+                                    Hydrolats</a></li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Massage Oils</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Macerates</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Massage Oils</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Vegetable oils</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Assortments</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Boxes</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Books</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">DIY boxes</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Accessories
+                                    (laboratory)</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Diffusers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Site Map</span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Guide</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">What are Essential
+                                    oils</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Magali's words</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The herbarium</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Our brand</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our story</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our commitments</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our team</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Synergie</a></li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Connect</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Consumers</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Professional</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Find Us</span>
+                        <span class="clear">&nbsp;</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Interactive map</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Online sale
+                                    points</a>
+                            </li>
+                        </ul>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href="" class="text-white">Term &
+                                Condition</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">Retours
+                                livraison</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">Privacy
+                                Policy</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">FAQs</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">Telechargements</a></span>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-auto mb-3 text-white">
+                        <h5 class="lh-lg fw-bold text-200 text-white">SUBSCRIBE</h5>
+                        <p>Send the new discount campaigns to my email</p>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12">
+                                <div class="input-container w-100">
+                                    <input class="form-control input-box bg-800 border-0 rounded-0" type="email"
+                                        placeholder="Enter Email" aria-label="email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="lh-lg fw-bold text-200 text-white">CONTACT</h5>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12">
+                                <span><i class="fa fa-map-marker me-4" aria-hidden="true"></i>Essenciagua
+                                    distillery,
+                                    HQE business park La Tieule 48500 La Tieule</span><br>
+                                <span><i class="fa fa-phone me-3" aria-hidden="true"></i> Such. : 04 66 48 45
+                                    06</span><br>
+                                <span><i class="fa fa-envelope me-3"
+                                        aria-hidden="true"></i>contact@essenciagua.com</span><br>
+                            </div>
+                        </div>
+
+                        <h5 class="lh-lg fw-bold text-200 text-white">FOLLOW US</h5>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12 d-flex align-items-center follow-us">
+                                <i class="fa fa-facebook-square me-3" aria-hidden="true"></i>
+                                <i class="fa fa-youtube-play me-3" aria-hidden="true"></i>
+                                <i class="fa fa-instagram me-3" aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square me-3" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end of .container-->
+            <hr class="border border-800" />
+            <div class="row pb-3 p-0 w-100">
+                <div class="col-md-12 order-0">
+                    <p class="text-200 text-center">Essenciagua © 2022 - 2023. Tous droits reserves.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+    </footer>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var isDropdownShown = false;
+
+            $('label[for="sorted"]').on('click', function () {
+                isDropdownShown = !isDropdownShown;
+                $(this).parent().toggleClass('show');
+                $(this).next('.dropdown-menu').toggle();
+            });
+
+            $('.dropdown-menu').hover(
+                function () {
+                    if (isDropdownShown) {
+                        $(this).show();
+                    }
+                },
+                function () {
+                    $(this).hide();
+                }
+            );
+
+            $(document).on('click', function (event) {
+                if (!$(event.target).closest('.select').length) {
+                    isDropdownShown = false;
+                    $('.select').removeClass('show');
+                    $('.dropdown-menu').hide();
+                }
+            });
+        });
+
+        
+        $(document).ready(function () {
+            $('.select').on('click', function () {
+                $(this).find(':last-child').addClass('active');
+            });
+            $('.select').hover(
+                function () {
+                    console.log("ok")
+                },
+                function () {
+                    this.lastElementChild.classList.remove('active')
+                }
+
+            )
+        })
+
+
+    </script>
+
+</body>
+
+</html>

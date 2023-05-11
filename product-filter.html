@@ -1,0 +1,2717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Amado - Furniture Ecommerce Template | Product Filter</title>
+
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Slick js -->
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 overflow-hidden-mb">
+         <!-- Topbar Start -->
+         <header>
+            <div class="bg-header-title d-flex align-items-center ">
+                <div class="d-block w-100 text-center">
+                    <a class="w-100 d-flex align-items-center justify-content-center mobile">Livraison offerte + cadeau
+                        dès
+                        45€² | -20% sur votre 1ère commande avec le code WELCOME³</a>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center py-md-3 px-md-5">
+                <div class="row d-flex align-items-center justify-content-center w-100" style="margin-left:4rem">
+                    <div class="col-lg-4 col-xs-3 d-md-block d-none">
+                        <a class="text-decoration-none">
+                            <img src="css/image/Frame.png" alt="Essenciagua">
+                        </a>
+                    </div>
+
+                    <!-- Search taskbar -->
+                    <div class="col-lg-4 col-xs-4 txt-search-parent d-md-block d-none">
+                        <form action="" class="txt-search-child">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-1 rounded-1" placeholder="Search">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-transparent text-primary border-0">
+                                        <i class="bi bi-search search-icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Search end -->
+
+                    <!-- Button taskbar start -->
+
+                    <div class="col-lg-4 col-xs-4  d-md-block d-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="account-btn">
+                                <span class="bg-transparent text-primary icon-nav p-0">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <span class="account-text">Account</span>
+                            </div>
+                            <div class="cart-btn ms-5">
+                                <span class="bg-transparent text-primary icon-nav">
+                                    <i class="bi bi-cart"></i>
+                                </span>
+                                <span class="cart_qty_cls amount" id="cart-item">5</span>
+                                <span class="cart-text">Cart</span>
+                            </div>
+                            <div class="dropdown ms-5 me-5 mt-3">
+                                <a class="dropdown-toggle text-dark" href="#" role="button" id="language"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./img/icon/en.png"> EN
+                                </a>
+                                <ul class="dropdown-menu shadow-lg" aria-labelledby="language">
+                                    <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2">
+                                            EN</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2">
+                                            EN</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Button taskbar end -->
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg shadow 2 ">
+                <div class="container-fluid nav-size mx-md-5 mx-2">
+                    <div class="d-flex d-md-none w-100">
+                        <div class="col-4 d-flex justify-content-start">
+                            <button class="navbar-toggler collapsed border-0 rounded-0 " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <a class="navbar-brand d-md-none " href="#"><img src="css/image/Frame.png"
+                                    alt="Essenciagua"></a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end d-md-none ">
+                            <div class="cart-btn ms-5 ">
+                                <span class="bg-transparent text-primary icon-nav">
+                                    <i class="bi bi-cart"></i>
+                                </span>
+                                <span class="cart_qty_cls amount" id="cart-item">5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse mx-md-5" id="navbar-content">
+                        <ul class="navbar-nav nav-fill w-100 mr-md-auto mb-2 mb-lg-0 mx-md-4">
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-1">Essential Oils</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Essential Oils</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/1.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">French regional
+                                                                        oils</a></li>
+                                                                <li class="item-menu"><a href="">
+                                                                        Single oils</a></li>
+                                                                <li class="item-menu"><a href="">Blends</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/2.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Selections
+                                                                    </a></li>
+                                                                <li class="item-menu"><a href="">
+                                                                        Unitary oils</a></li>
+                                                                <li class="item-menu"><a href="">The mixtures</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 py-4 ps-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center position-relative banner-item">
+                                                            <img src="./img/megamenu-img/bg.png" class="w-100">
+                                                            <h5
+                                                                class="text-uppercase position-absolute text-white top-50 start-50 translate-middle text-center vitality-title">
+                                                                PROMOTION</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-1 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-2">Hydrolats</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Hydrolats</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/3.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Our simple
+                                                                        hydrolats</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/4.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Our blends of
+                                                                        Hydrolats</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 py-4 ps-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center position-relative banner-item">
+                                                            <img src="./img/megamenu-img/bg.png" class="w-100">
+                                                            <h5
+                                                                class="text-uppercase position-absolute text-white top-50 start-50 translate-middle text-center vitality-title">
+                                                                PROMOTION</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-1 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-3">Massage Oils</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Massage Oils</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/5.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Macerates</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/6.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Massage oils</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/7.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Vegetable oils</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-4">Assortments</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Assortments</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/8.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Boxes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/9.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">By yourself</a>
+                                                                </li>
+                                                                <li class="item-menu"><a href="">DIY Boxes</a></li>
+                                                                <li class="item-menu"><a href="">Books</a></li>
+                                                                <li class="item-menu"><a href="">Accessories
+                                                                        (laboratory)</a></li>
+                                                                <li class="item-menu"><a href="">Diffusers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 py-4 ps-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center position-relative banner-item">
+                                                            <img src="./img/megamenu-img/bg.png" class="w-100">
+                                                            <h5
+                                                                class="text-uppercase position-absolute text-white top-50 start-50 translate-middle text-center vitality-title">
+                                                                PROMOTION</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12 col-md-1 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-5">Guide</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Assortments</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/8.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Boxes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/9.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">By yourself</a>
+                                                                </li>
+                                                                <li class="item-menu"><a href="">DIY Boxes</a></li>
+                                                                <li class="item-menu"><a href="">Books</a></li>
+                                                                <li class="item-menu"><a href="">Accessories
+                                                                        (laboratory)</a></li>
+                                                                <li class="item-menu"><a href="">Diffusers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 py-4 ps-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center position-relative banner-item">
+                                                            <img src="./img/megamenu-img/bg.png" class="w-100">
+                                                            <h5
+                                                                class="text-uppercase position-absolute text-white top-50 start-50 translate-middle text-center vitality-title">
+                                                                PROMOTION</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12 col-md-1 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" data-menu="menu-container-6">Our brand</a>
+                                <div class="dropdown-menu shadow w-100 menu-container visible">
+                                    <div class="mega-content px-4 border-0 rounded-0">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <h5 class="text-center">Assortments</h5>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/8.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">Boxes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-2 py-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <img src="./img/megamenu-img/9.png"
+                                                            class="img-fluid img-item w-100" alt="image">
+                                                        <div class="card-body p-0 mt-3">
+                                                            <ul class="text-dark p-0">
+                                                                <li class="item-menu main"><a href="">By yourself</a>
+                                                                </li>
+                                                                <li class="item-menu"><a href="">DIY Boxes</a></li>
+                                                                <li class="item-menu"><a href="">Books</a></li>
+                                                                <li class="item-menu"><a href="">Accessories
+                                                                        (laboratory)</a></li>
+                                                                <li class="item-menu"><a href="">Diffusers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 py-4 ps-4">
+                                                    <div class="card border-0 rounded-0">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center position-relative banner-item">
+                                                            <img src="./img/megamenu-img/bg.png" class="w-100">
+                                                            <h5
+                                                                class="text-uppercase position-absolute text-white top-50 start-50 translate-middle text-center vitality-title">
+                                                                PROMOTION</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12 col-md-1 py-4 d-flex justify-content-end px-0">
+                                                    <i class="fa fa-times text-right close-icon" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Professional Space</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search mobile -->
+            <div class="row d-md-none d-block">
+                <div class="col-12">
+                    <div class="txt-search-parent">
+                        <form action="" class="txt-search-child">
+                            <div class="input-group">
+                                <div class="input-group-prepend ">
+                                    <span class="input-group-text bg-white border-0 rounded-0"><i class="bi bi-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control search-input border-0 rounded-0" placeholder="Search product">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search end -->
+
+        </header>
+
+
+        <!-- breadcrumb -->
+        <section class="w-100  px-md-6 px-custom1  py-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"> Our products</li>
+                <li class="breadcrumb-item" aria-current="page">Essential oils</li>
+            </ol>
+        </section>
+
+        <!--Content-->
+
+        <!-- filter -->
+        <section class="w-100 px-md-6 px-custom1 filter">
+            <div class="row">
+                <!-- Left Side -->
+                <div class="col-md-3">
+                    <h2 class="fw-bold fs-5 lh-1.2 text-black mb-4">PRODUCT</h2>
+                    <form>
+                        <div class="form-group filter-input-search d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.45">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.33331 2.66666C4.75598 2.66666 2.66665 4.756 2.66665 7.33333C2.66665 9.91066 4.75598 12 7.33331 12C9.91064 12 12 9.91066 12 7.33333C12 4.756 9.91064 2.66666 7.33331 2.66666ZM1.33331 7.33333C1.33331 4.01962 4.0196 1.33333 7.33331 1.33333C10.647 1.33333 13.3333 4.01962 13.3333 7.33333C13.3333 10.647 10.647 13.3333 7.33331 13.3333C4.0196 13.3333 1.33331 10.647 1.33331 7.33333Z"
+                                        fill="black" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.6286 10.6286C10.889 10.3682 11.3111 10.3682 11.5714 10.6286L14.4714 13.5286C14.7318 13.7889 14.7318 14.2111 14.4714 14.4714C14.2111 14.7318 13.789 14.7318 13.5286 14.4714L10.6286 11.5714C10.3683 11.3111 10.3683 10.8889 10.6286 10.6286Z"
+                                        fill="black" />
+                                </g>
+                            </svg>
+                            <input type="text" class="form-control border-0" placeholder="Search">
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <div class="list">
+                            <div class="list-item">
+                                <label>For who</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+                                    <div class="select-sub">
+                                        <p>Volume 1</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <label>For what</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+
+                                    <div class="select-sub">
+                                        <p>Volume 2</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <label>Origin</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+
+                                    <div class="select-sub">
+                                        <p>Volume 3</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <label>User manual</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+
+                                    <div class="select-sub">
+                                        <p>Volume 4</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <label>Label</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+
+                                    <div class="select-sub">
+                                        <p>Volume 5</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <label>Bottling</label>
+                                <div class="select">
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.44645 4.44645L0.853553 0.853553C0.538571 0.538571 0.761653 0 1.20711 0L8.39289 0C8.83835 0 9.06143 0.538571 8.74645 0.853554L5.15355 4.44645C4.95829 4.64171 4.64171 4.64171 4.44645 4.44645Z"
+                                            fill="black" />
+                                    </svg>
+
+                                    <div class="select-sub">
+                                        <p>Volume 6</p>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+
+
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">Vitality
+                                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5835L3.33333 6.91683L9.16667 1.0835"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- category -->
+                    <div class="category">
+                        <label for="new-category">Category</label>
+                        <div class="accordion" id="accordionExample"><!--mx-4-->
+                            <div class="accordion-item border-1 rounded-0">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button custom-icon" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Essential Oils </button>
+
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 m-auto">
+                                        <div class="card-body p-0">
+                                            <ul class="category-list-item-sub">
+                                                <li>
+                                                    <p class="fw-bold">French Regional Oils</p>
+                                                    <ul>
+                                                        <li>Single Oils</li>
+                                                        <li>Blends</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p class="fw-bold">Selections</p>
+                                                    <ul>
+                                                        <li>Unitary Oils</li>
+                                                        <li>The mixtures</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-1 rounded-0">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">Hydrolats
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 m-auto">
+                                        <div class="card-body p-0">
+                                            <ul class="category-list-item-sub">
+                                                <li>
+                                                    <p class="fw-bold">French Regional Oils</p>
+                                                    <ul>
+                                                        <li>Single Oils</li>
+                                                        <li>Blends</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p class="fw-bold">Selections</p>
+                                                    <ul>
+                                                        <li>Unitary Oils</li>
+                                                        <li>The mixtures</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-1 rounded-0">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false"
+                                        aria-controls="collapse3">Macerates/ Vegetable
+                                        Oils/Care Oils
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 m-auto">
+                                        <div class="card-body p-0">
+                                            <ul class="category-list-item-sub">
+                                                <li>
+                                                    <p class="fw-bold">French Regional Oils</p>
+                                                    <ul>
+                                                        <li>Single Oils</li>
+                                                        <li>Blends</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p class="fw-bold">Selections</p>
+                                                    <ul>
+                                                        <li>Unitary Oils</li>
+                                                        <li>The mixtures</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-1 rounded-0">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false"
+                                        aria-controls="collapse4">Assortments
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 m-auto">
+                                        <div class="card-body p-0">
+                                            <ul class="category-list-item-sub">
+                                                <li>
+                                                    <p class="fw-bold">French Regional Oils</p>
+                                                    <ul>
+                                                        <li>Single Oils</li>
+                                                        <li>Blends</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p class="fw-bold">Selections</p>
+                                                    <ul>
+                                                        <li>Unitary Oils</li>
+                                                        <li>The mixtures</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="blog">
+                        <h2>Magali’s Blog</h2>
+                        <p class="desc">Want to know more about Essential Oils? It’s here: Follow the Guide. Magali
+                            shares with you all her recipes and tips! Visit Magali’s blog!</p>
+                        <div class="">
+                            <img src="./img/img-blog/Rectangle 1147 (1).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum color</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum
+                                    dolor sit amet, consectetuer adipiscing elit </p>
+                                <a href="#" class="post-read-more">Read More</a>
+                            </div>
+                        </div>
+                        <div class="button-ouline">
+                            <button class="mt-2 p-2 btn-add w-100">See all blog</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="col-md-9 filter-product">
+                    <div class="row">
+                        <div class="col-md-6 filter-product-header">
+                            <h2>Results: <span>87</span> products</h2>
+                            <div class="filter-product-header-button">
+                                <button>Display all</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 filter-product-header-mb">
+                            <div class="filter-product-header-button">
+                                <button>
+                                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.45038 5.59744V12H6.53435V5.59437C5.75267 5.38694 5.17557 4.67093 5.17557 3.81818C5.17557 2.96543 5.75267 2.24942 6.53435 2.042V0H7.45038V2.03892C8.23969 2.2402 8.82443 2.96082 8.82443 3.81818C8.82443 4.67554 8.23969 5.39616 7.45038 5.59744ZM14 8.18182C14 7.32907 13.4229 6.61306 12.6412 6.40563V0H11.7252V6.40256C10.9359 6.60384 10.3511 7.32446 10.3511 8.18182C10.3511 9.03918 10.9359 9.7598 11.7252 9.96108V12H12.6412V9.958C13.4229 9.75058 14 9.03457 14 8.18182ZM2.29008 6.40563V0H1.37405V6.40256C0.584733 6.60384 0 7.32446 0 8.18182C0 9.03918 0.584733 9.7598 1.37405 9.96108V12H2.29008V9.958C3.07176 9.75058 3.64885 9.03457 3.64885 8.18182C3.64885 7.32907 3.07176 6.61306 2.29008 6.40563Z" fill="white"/>
+                                        </svg>
+                                        
+                                    FILTER(3)</button>
+                            </div>
+                            <div class="">
+                                <label for="Sorted by">Sorted by: </label>
+                                <div class="select dropdown">
+                                    <label for="sorted" class="dropdown-toggle text-dark" href="#" role="button"
+                                        id="sorted">Best seller</label>
+    
+                                    <ul class="dropdown-menu shadow-lg dropdown-sorted p-0 m-0" aria-labelledby="sorted"
+                                        style="display: none;">
+                                        <li><a class="dropdown-item border-top" href="#">Featured</a></li>
+                                        <li><a class="dropdown-item border-top" href="#">From A to Z</a></li>
+                                        <li><a class="dropdown-item border-top" href="#">From Z to A</a></li>
+                                        <li><a class="dropdown-item border-top" href="#">From Z to A</a></li>
+                                        <li><a class="dropdown-item border-top" href="#">Decreasing price</a></li>
+                                        <li><a class="dropdown-item border-top" href="#">Bestsellers</a></li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-start">
+                            <!-- Pagination with 10 items -->
+                            <div>
+                                <ul class="pagination justify-content-end">
+
+                                    <li class="page-item active"><a class="" href="#">1</a></li>
+                                    <li class="page-item"><a class="" href="#">2</a></li>
+                                    <li class="page-item"><a class="" href="#">3</a></li>
+                                    <li class="page-item"><a class="" href="#">...</a></li>
+                                    <li class="page-item"><a class="" href="#">9</a></li>
+                                    <li class="page-item"><a class="" href="#">10</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 filter-product-selected">
+                            <label>FILTER</label>
+                            <div class="filter-product-selected-item">
+                                <p>Essential Oils</p>
+                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.24304 0.757095C5.41447 3.58566 3.82861 5.17153 1.00004 8.00009"
+                                        stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M8.24304 8.00021C5.41448 5.17165 3.82861 3.58578 1.00004 0.757214"
+                                        stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="filter-product-selected-item">
+                                <p>550ml</p>
+                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.24304 0.757095C5.41447 3.58566 3.82861 5.17153 1.00004 8.00009"
+                                        stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M8.24304 8.00021C5.41448 5.17165 3.82861 3.58578 1.00004 0.757214"
+                                        stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <p class="m-0 text-decoration-underline" style="line-height: 16px;">Clear All</p>
+                        </div>
+                        <div class="col-12 filter-product-selected-mb">
+                            <div class="filter-product-selected-heading">
+                            <label>FILTER</label>
+                            <p class="m-0 text-decoration-underline" style="line-height: 16px;">Clear All</p>
+
+                            </div>
+  
+                            <div class="d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 10px;">
+                                <div class="filter-product-selected-item">
+                                    <p>Essential Oils</p>
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.24304 0.757095C5.41447 3.58566 3.82861 5.17153 1.00004 8.00009"
+                                            stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                        <path d="M8.24304 8.00021C5.41448 5.17165 3.82861 3.58578 1.00004 0.757214"
+                                            stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+    
+                                </div>
+                                <div class="filter-product-selected-item">
+                                    <p>550ml</p>
+                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.24304 0.757095C5.41447 3.58566 3.82861 5.17153 1.00004 8.00009"
+                                            stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                        <path d="M8.24304 8.00021C5.41448 5.17165 3.82861 3.58578 1.00004 0.757214"
+                                            stroke="#242F3E" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 filter-product-heading">
+                        <div class="col col-6">
+                            <h2>Essential oils</h2>
+                        </div>
+                        
+                        <div class="col col-6 ">
+                            <label for="Sorted by">Sorted by: </label>
+                            <div class="select dropdown">
+                                <label for="sorted" class="dropdown-toggle text-dark" href="#" role="button"
+                                    id="sorted">Best seller</label>
+
+                                <ul class="dropdown-menu shadow-lg dropdown-sorted p-0 m-0" aria-labelledby="sorted"
+                                    style="display: none;">
+                                    <li><a class="dropdown-item border-top" href="#">Featured</a></li>
+                                    <li><a class="dropdown-item border-top" href="#">From A to Z</a></li>
+                                    <li><a class="dropdown-item border-top" href="#">From Z to A</a></li>
+                                    <li><a class="dropdown-item border-top" href="#">From Z to A</a></li>
+                                    <li><a class="dropdown-item border-top" href="#">Decreasing price</a></li>
+                                    <li><a class="dropdown-item border-top" href="#">Bestsellers</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-4 filter-product-heading-desc">
+                        <p>All our essential oils and our essences are of possible food uses, 100% from organic
+                            production; they are 100% pure, integral, chemotyped and botanically...  <a href="">Show more</a></p>
+                           
+                    </div>
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="list-product row">
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-5 pd-0-mb">
+                                    <div class="card border-0 h-100">
+                                        <div class="text-center product-img w-100 position-relative">
+                                            <a href="" class="d-flex justify-content-center">
+                                                <div class="item-major-img rounded-circle position-relative purification"
+                                                    style="background-color: #9BBA5E1A;">
+                                                    <img src="./img/product-img/Vector5.png" alt="">
+                                                    <img src="./img/product-img/Rectangle1142.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body mt-2">
+                                            <div class="">
+                                                <span class="instock border-0 rounded-2">In stock</span>
+                                                <span class="promo border-0 rounded-2">Promo</span>
+                                            </div>
+                                            <p class="card-title m-0 fs-6 fw-bold py-2">
+                                                <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                            </p>
+                                            <div class="product-review text-warning">
+                                                <div class="star">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <span class="text-dark">(3 reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="price mt-2">
+                                                <span class="text-decoration-line-through oldpirce">6.00</span>
+                                                <span class="fw-bold pirce">6.00</span>
+                                            </div>
+
+                                            <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-end">
+                            <!-- Pagination with 10 items -->
+                            <div>
+                                <ul class="pagination justify-content-end panination-mb">
+
+                                    <li class="page-item active"><a class="" href="#">1</a></li>
+                                    <li class="page-item"><a class="" href="#">2</a></li>
+                                    <li class="page-item"><a class="" href="#">3</a></li>
+                                    <li class="page-item"><a class="" href="#">...</a></li>
+                                    <li class="page-item"><a class="" href="#">9</a></li>
+                                    <li class="page-item"><a class="" href="#">10</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-3">
+            <div class="consulted w-100 px-md-6 px-custom1">
+                <h2 class="">You recently bought</h2>
+            </div>
+            <div class="swiper product-slider w-100 px-md-6 consulted ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2 pd-0-mb">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left mr-0-mb">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="d-flex justify-content-between position-absolute w-100"
+                    style="top: 20%; z-index: 100; padding: 0 1rem;">
+                    <div class="product-button-prev">
+
+
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.97559 12.5117L2.02437 6.85318L6.97559 1.19465" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+
+                    </div>
+                    <div class="product-button-next">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.02441 1.48828L5.97563 7.14682L1.02441 12.8054" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="pagination-product">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="mb-3">
+            <div class="consulted w-100 px-md-6 px-custom1">
+                <h2 class="">You have recently consulted</h2>
+            </div>
+            <div class="swiper product-slider w-100 px-md-6 consulted ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2 pd-0-mb">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left mr-0-mb">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="d-flex justify-content-between position-absolute w-100"
+                    style="top: 20%; z-index: 100; padding: 0 1rem;">
+                    <div class="product-button-prev">
+
+
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.97559 12.5117L2.02437 6.85318L6.97559 1.19465" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+
+                    </div>
+                    <div class="product-button-next">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.02441 1.48828L5.97563 7.14682L1.02441 12.8054" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="pagination-product">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="w-100 px-md-6 px-custom1 blog-filter">
+            <h2>Recipe suggestion</h2>
+
+            <div class="blog">
+                <div class="posts row d-flex ">
+                    <div class="post col-lg-4">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147.png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                    <div class="post col-lg-4">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147 (1).png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                    <div class="post col-lg-4 ">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147 (2).png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="mb-3">
+            <div class="consulted w-100 px-md-6 px-custom1">
+                <h2 class="">You may also like</h2>
+            </div>
+            <div class="swiper product-slider w-100 px-md-6 consulted ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2 pd-0-mb">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left mr-0-mb">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-6 col-md-3 mb-3">
+                        <div class="card border-0 h-100">
+                            <div class="text-center product-img w-100 position-relative">
+                                <a href="" class="d-flex justify-content-center">
+                                    <div class="item-major-img rounded-circle position-relative purification"
+                                        style="background-color: #9BBA5E1A;">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body mt-2">
+                                <div class="text-left">
+                                    <span class="instock border-0 rounded-2">In stock</span>
+                                    <span class="promo border-0 rounded-2">Promo</span>
+                                </div>
+                                <p class="card-title m-0 fs-6 fw-bold py-2">
+                                    <a href="#" class="text-dark">Lorem ipsum color ipsum color</a>
+                                </p>
+                                <div class="product-review text-warning">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-dark">3 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price mt-2 text-left">
+                                    <span class="text-decoration-line-through oldpirce">€8.00</span>
+                                    <span class="fw-bold pirce">€6.00</span>
+                                </div>
+
+                                <button class="mt-2 p-2 btn-add w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="d-flex justify-content-between position-absolute w-100"
+                    style="top: 20%; z-index: 100; padding: 0 1rem;">
+                    <div class="product-button-prev">
+
+
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.97559 12.5117L2.02437 6.85318L6.97559 1.19465" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+
+                    </div>
+                    <div class="product-button-next">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.02441 1.48828L5.97563 7.14682L1.02441 12.8054" stroke="#242F3E"
+                                stroke-width="2" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="pagination-product">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer-section spad mt-5 ">
+        <section class="bg-footer position-relative">
+            <img src="./img/icon/Group.png" class="position-absolute bottom-0 end-0">
+            <div class="container">
+                <div class="row d-flex justify-content-lg-between pt-5">
+                    <div class="col-12 col-md-3 order-md-2 order-2 border-top-footer py-3 py-md-0">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col">
+                                <div class="ess-oils">
+                                    <span class="lh-lg fw-bold text-white text-white-title">Essential Oils</span>
+                                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Single</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Blends</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Unitary
+                                                oils</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The
+                                                mixtures</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hydrolats">
+                                    <span class="clear">&nbsp;</span>
+                                    <span class="lh-lg fw-bold text-white text-white-title">Hydrolats</span>
+                                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our simple
+                                                hydrolats</a></li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our blends
+                                                of
+                                                Hydrolats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="massage-oils">
+                                    <span class="lh-lg fw-bold text-white text-white-title">Massage Oils</span>
+                                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none"
+                                                href="#!">Macerates</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Massage
+                                                Oils</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Vegetable
+                                                oils</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="assortments">
+                                    <span class="clear">&nbsp;</span>
+                                    <span class="lh-lg fw-bold text-white text-white-title">Assortments</span>
+                                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Boxes</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Books</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">DIY
+                                                boxes</a>
+                                        </li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Accessories
+                                                (laboratory)</a></li>
+                                        <li class="lh-lg"><a class="text-200 text-decoration-none"
+                                                href="#!">Diffusers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 order-md-3 order-3 border-top-footer py-3 py-md-0">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col">
+                                <span class="lh-lg fw-bold text-white text-white-title">Site Map</span>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-white text-white-title">Guide</span>
+                                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">What are
+                                            Essential
+                                            oils</a></li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Magali's
+                                            words</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The
+                                            herbarium</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <span class="lh-lg fw-bold text-white text-white-title">Our brand</span>
+                                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our story</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our
+                                            commitments</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our team</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Synergie</a>
+                                    </li>
+                                </ul>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-white text-white-title">Connect</span>
+                                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Consumers</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none"
+                                            href="#!">Professional</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 order-md-4 order-4 border-top-footer py-3 py-md-0">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col">
+                                <span class="lh-lg fw-bold text-white text-white-title">Find Us</span>
+                                <span class="clear">&nbsp;</span>
+                                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Interactive
+                                            map</a>
+                                    </li>
+                                    <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Online sale
+                                            points</a>
+                                    </li>
+                                </ul>
+                                <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                        class="text-white">Term &
+                                        Condition</a></span>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                        class="text-white">Retours
+                                        livraison</a></span>
+                            </div>
+                            <div class="col">
+                                <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                        class="text-white">Privacy
+                                        Policy</a></span>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                        class="text-white">FAQs</a></span>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                        class="text-white">Telechargements</a></span>
+
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-blue-title"><i class="fa fa-download"
+                                        aria-hidden="true"></i>
+                                    <a href="">Essenciagua Catalogue</a></span>
+                                <span class="clear">&nbsp;</span>
+                                <span class="lh-lg fw-bold text-blue-title"><i class="fa fa-download"
+                                        aria-hidden="true"></i>
+                                    <a href="">Notre
+                                        livre blanc</a></span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-12 col-md-3 text-white order-1 order-md-4 py-3 py-md-0">
+                        <div class="subscribe-footer">
+                            <h5 class="lh-lg fw-bold text-200 text-white">SUBSCRIBE</h5>
+                            <p>Send the new discount campaigns to my email</p>
+                            <div class="row input-group-icon mb-5">
+                                <div class="col-12">
+                                    <div class="input-container w-100">
+                                        <input class="form-control input-box bg-800 border-0 rounded-0" type="email"
+                                            placeholder="Enter Email" aria-label="email" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-footer">
+                            <h5 class="lh-lg fw-bold text-200 text-white">CONTACT</h5>
+                            <div class="row input-group-icon mb-5">
+                                <div class="col-12">
+                                    <span><i class="fa fa-map-marker me-4" aria-hidden="true"></i>Essenciagua
+                                        distillery,
+                                        HQE business park La Tieule 48500 La Tieule</span><br>
+                                    <span><i class="fa fa-phone me-3" aria-hidden="true"></i> Such. : 04 66 48 45
+                                        06</span><br>
+                                    <span><i class="fa fa-envelope me-3"
+                                            aria-hidden="true"></i>contact@essenciagua.com</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="follow-us-footer">
+                            <h5 class="lh-lg fw-bold text-200 text-white">FOLLOW US</h5>
+                            <div class="row input-group-icon mb-md-5 mb-3">
+                                <div class="col-12 d-flex align-items-center follow-us">
+                                    <a href="">
+                                        <i class="fa fa-facebook-square me-3" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-youtube-play me-3" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-instagram me-3" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa fa-twitter-square me-3" aria-hidden="true"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+            <hr class="border border-800" />
+            <div class="row pb-3 p-0 w-100">
+                <div class="col-md-12 order-0">
+                    <p class="text-200 text-center">Essenciagua © 2022 - 2023. Tous droits reserves.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section> close ============================-->
+    </footer>
+    <!-- Footer End -->
+    </div>
+
+    <script>
+    </script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    if (window.screen.width <= 600) {
+        $('.product-button-next')[0].classList.remove('none')
+        $('.product-button-prev')[0].classList.remove('none')
+        $('.product-slider')[0].classList.remove('px-custom1')
+        var swiper = new Swiper(".product-slider", {
+            slidesPerView: 2,
+            pagination: {
+                el: ".pagination-product",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".product-button-next",
+                prevEl: ".product-button-prev",
+            },
+        });
+    } else {
+        console.log($('.product-button-next')[0])
+        $('.product-button-next')[0].classList.add('none')
+        $('.product-button-prev')[0].classList.add('none')
+    }
+
+
+
+</script>
+
+</html>

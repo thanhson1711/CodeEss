@@ -868,9 +868,9 @@
                                     </div>
                                     <div class="col-6 mb-3">
                                         <div class="d-flex">
-                                           <div class="image">
-                                            <img src="./img/img-blog/Rectangle 1147 (1).png" alt="" width="236px">
-                                           </div>
+                                            <div class="image">
+                                                <img src="./img/img-blog/Rectangle 1147 (1).png" alt="" width="236px">
+                                            </div>
                                             <div class="body-blog">
                                                 <p class="day">04/04/2023</p>
                                                 <h4>Lorem ipsum color</h4>
@@ -1234,7 +1234,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -2179,94 +2179,94 @@
         });
     }
 
-                        $('.product__desc-nav ul li').on('click', (event) => {
-                            function writeRiview(el, category, pre) {
-                                console.log('ok review not click write')
-                                el.addEventListener('click', () => {
-                                    active(category)
-                                    remove(pre)
+    $('.product__desc-nav ul li').on('click', (event) => {
+        function writeRiview(el, category, pre) {
+            console.log('ok review not click write')
+            el.addEventListener('click', () => {
+                active(category)
+                remove(pre)
 
-                                })
-                            }
-                            function removeWriteRiview() {
-                                if ($(`.product__desc-content-fisrt.write-review.active`)[0]) {
+            })
+        }
+        function removeWriteRiview() {
+            if ($(`.product__desc-content-fisrt.write-review.active`)[0]) {
 
-                                    $(`.product__desc-content-fisrt.write-review.active`)[0].classList.remove("active")
-                                    $(`.product__desc-content-second.write-review.active`)[0].classList.remove("active")
-                                }
-                            }
-                            const pre = $('.product__desc-nav ul li.active')[0].getAttribute('data-id')
-                            $('.product__desc-nav ul li.active')[0].classList.remove('active')
-                            event.currentTarget.classList.add('active')
-                            const category = event.currentTarget.getAttribute('data-id')
-                            function active(category) {
-                                $(`.product__desc-content-fisrt.${category}`)[0].classList.add('active')
-                                $(`.product__desc-content-second.${category}`)[0].classList.add('active')
-                            }
-                            function remove(pre) {
-                                $(`.product__desc-content-fisrt.${pre}`)[0].classList.remove('active')
-                                $(`.product__desc-content-second.${pre}`)[0].classList.remove('active')
-                            }
-                            switch (category) {
-                                case 'presentation':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
+                $(`.product__desc-content-fisrt.write-review.active`)[0].classList.remove("active")
+                $(`.product__desc-content-second.write-review.active`)[0].classList.remove("active")
+            }
+        }
+        const pre = $('.product__desc-nav ul li.active')[0].getAttribute('data-id')
+        $('.product__desc-nav ul li.active')[0].classList.remove('active')
+        event.currentTarget.classList.add('active')
+        const category = event.currentTarget.getAttribute('data-id')
+        function active(category) {
+            $(`.product__desc-content-fisrt.${category}`)[0].classList.add('active')
+            $(`.product__desc-content-second.${category}`)[0].classList.add('active')
+        }
+        function remove(pre) {
+            $(`.product__desc-content-fisrt.${pre}`)[0].classList.remove('active')
+            $(`.product__desc-content-second.${pre}`)[0].classList.remove('active')
+        }
+        switch (category) {
+            case 'presentation':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
 
-                                case 'the-plant':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'blog':
-                                    $('.product__desc-content')[0].classList.add('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'precautions':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'profil-biochimique':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'documents-techniques':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'benefits':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    removeWriteRiview()
-                                    active(category)
-                                    remove(pre)
-                                    break;
-                                case 'review':
-                                    $('.product__desc-content')[0].classList.remove('flex-column')
-                                    active(category)
-                                    remove(pre)
-                                    writeRiview($(`.product__desc-content-fisrt.${category} .write-review`)[0], 'write-review', 'review')
-                                    break;
-                                default:
-                                    remove(pre)
+            case 'the-plant':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'blog':
+                $('.product__desc-content')[0].classList.add('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'precautions':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'profil-biochimique':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'documents-techniques':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'benefits':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                removeWriteRiview()
+                active(category)
+                remove(pre)
+                break;
+            case 'review':
+                $('.product__desc-content')[0].classList.remove('flex-column')
+                active(category)
+                remove(pre)
+                writeRiview($(`.product__desc-content-fisrt.${category} .write-review`)[0], 'write-review', 'review')
+                break;
+            default:
+                remove(pre)
 
-                                    console.log('I can"t find category')
-                            }
-
-
+                console.log('I can"t find category')
+        }
 
 
-                        });
+
+
+    });
 
 
 </script>

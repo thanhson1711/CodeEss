@@ -1354,7 +1354,7 @@
     padding-left: 0;
   }
 
-  .account-history .my-account-seleted-lbl {
+  .account-history .active {
     color: #30AA88 !important;
     background-color: #fff;
     position: relative;
@@ -1367,7 +1367,7 @@
     margin-left: 0;
   }
 
-  .account-history .my-account-seleted-lbl::before {
+  .account-history .active::before {
     content: "";
     width: 100%;
     height: 3px;

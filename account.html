@@ -541,9 +541,9 @@
                     <div class="col-12 col-md-3 col-lg-3">
                         <h4>My Account</h4>
                         <div class="dashboard-sidebar">
-                            <nav class=" navbar-expand bg-transparent w-100">
-                                <div class="faq-tab w-100">
-                                    <ul class="nav nav-tabs d-flex d-md-block w-100 justify-content-between"
+                            <nav class="navbar navbar-expand bg-transparent w-100">
+                                <div class="faq-tab w-100 account-history">
+                                    <!-- <ul class="nav nav-tabs d-flex d-md-block w-100 justify-content-between"
                                         id="top-tab" role="tablist">
                                         <li class="nav-item"><a data-bs-toggle="tab" data-bs-target="#profile"
                                                 class="nav-link flex-fill active">My Profile</a></li>
@@ -551,6 +551,17 @@
                                                 class="nav-link flex-fill">Address</a></li>
                                         <li class="nav-item"><a data-bs-toggle="tab" data-bs-target="#orders"
                                                 class="nav-link flex-fill">Order History</a></li>
+                                    </ul> -->
+                                    <ul class="nav nav-tabs remove-padding-left account-history-nav">
+                                        <li class="my-account-lbl active">
+                                            <a data-bs-toggle="tab" data-bs-target="#profile"><span class="my-account-opt-clss">My Profile</span></a>
+                                        </li>
+                                        <li class="my-account-lbl">
+                                            <a data-bs-toggle="tab" data-bs-target="#address"><span class="my-account-opt-clss">Address</span></a>
+                                        </li>
+                                        <li class="my-account-lbl ">
+                                            <a data-bs-toggle="tab" data-bs-target="#orders"><span class="my-account-opt-clss">Order History</span></a>
+                                        </li>
                                     </ul>
                                     <img src="./img/bg-img/Group44750.png" class="mt-5 w-100 d-none d-md-block">
                                 </div>
@@ -920,7 +931,514 @@
                             </div>
 
                             <div class="tab-pane fade" id="orders">
-                                <div class="row">
+                                <div class="col-md-12 account-address">
+                                    <div class="row">
+                                        <div class="col-md account-address-header">
+                                            <h2>ORDER DETAILS HISTORY</h2>
+                                        </div><br><br>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table address-lists-table">
+                                            <thead>
+                                                <tr class="address-lists-table-header">
+                                                    <th scope="col" style="font-weight: 700;color: #898989; padding-left: 25px;">Reference</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989;">Order Date</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989;">Total amount</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989;">Payment method</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989;">Status</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989; text-align: center;">Billing</th>
+                                                    <th scope="col" style="font-weight: 700;color: #898989; text-align: center;">Action</th>
+                                                </tr>
+                                            </thead>
+                                            
+                                        </table>
+                                    </div>
+                                    <div class="order-detail-grid2">
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row order-detail-grid mb-3">
+                                            <div class=" hide-details">
+                                                <button>Hide Details</button>
+                                            </div>
+                                            <!-- First Div -->
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <span class="order-detail-grid-title1">Payment method</span>
+                                                    <span class="order-detail-grid-content1">CB - Payment by credit card</span>
+                                                </div>
+                                                <div class="order-history-row-underline"></div>
+                                                <div class="row">
+                                                    <span class="order-detail-grid-title1">Transportation</span>
+                                                    <span class="order-detail-grid-content1">Home delivery on time slot</span>
+                                                </div>
+                                                <div class="order-history-row-underline"></div>
+                                                <div class="row">
+                                                    <span class="order-detail-grid-title1">Follow your order step by step</span>
+                                                    <span class="order-detail-grid-content1">30/12/2022 &nbsp;&nbsp;&nbsp;&nbsp;Booked</span>
+                                                    <span class="order-detail-grid-content1">21/12/2022 &nbsp;&nbsp;&nbsp;&nbsp;In preparation</span>
+                                                    <span class="order-detail-grid-content1">20/12/2022 &nbsp;&nbsp;&nbsp;&nbsp;Accepted payment</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="order-detail-grid-content2">Click on the following link to track the delivery of your order</span>
+                                                    <span class="order-detail-grid-link">http://www.dpd.fr/tracex_ZLGDCSWBD_0812051</span>
+                                                </div>
+                                                <div class="row delivery-address">
+                                                    <h5 class="order-detail-grid-title2">YOUR DELIVERY ADDRESS</h5>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Full name</p>
+                                                        <b>Hsiang Lin HUANG</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Address </p>
+                                                        <b>7 passage du Génie</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Zipcode </p>
+                                                        <b>75012 Paris</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Country </p>
+                                                        <b>France</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Phone number </p>
+                                                        <b>777598866 - 777598866</b>
+                                                    </div>
+                                                </div>
+                                                <div class="row billing-address">
+                                                    <h5 class="order-detail-grid-title2">YOUR BILLING ADDRESS</h5>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Full name</p>
+                                                        <b>Hsiang Lin HUANG</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Address </p>
+                                                        <b>7 passage du Génie</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Zipcode </p>
+                                                        <b>75012 Paris</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Country </p>
+                                                        <b>France</b>
+                                                    </div>
+                                                    <div class="d-flex ">
+                                                        <p style="color: rgba(0, 0, 0, 0.45); min-width: 130px;">Phone number </p>
+                                                        <b>777598866 - 777598866</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- Second Div -->
+                                            <div class="col" >
+                                                <div class="row">
+                                                    <span class="order-detail-grid-title1" style="padding-left: 0px;">Product List</span>
+                                                </div>
+                                                <div class="account-history-product-list ">
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column flex-1">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item">
+                                                        <div class="d-flex flex-column">
+                                                            <p><span>Ref - </span><b>235</b></p>
+                                                            <b>Basilic Grand vert</b>
+                                                            <span>250 ml</span>
+                                                        </div>
+                                                        <b class="px-3">1 x</b>
+                                                        <div class="d-flex flex-column align-self-end">
+                                                            <span>8,40 €</span>
+                                                            <b>8,40 €</b>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account-history-product-list-item total-tax">
+                                                        <b>Total Tax-inclusive products</b>
+                                                        <b>100,10 €</b>
+                                                    </div>
+                                                    <div class="account-history-product-list-item total-coupons">
+                                                        <div>
+                                                        <b>Total Tax-inclusive products</b>
+                                                            <p style="width: 80%;">Discount vouchers: 5% discount beyond 95 € of purchases
+                                                                (Excluding shipping costs)</p>
+                                                        </div>
+                                                        <b class="align-self-start">-5,01 €</b>
+                                                    </div>
+                                                    <div class="account-history-product-list-item delivery-fee">
+                                                        <div>
+                                                        <b>Delivery fee</b>
+                                                            <p >Delivery method: Livraison à domicile sur créneau horaire</p>
+                                                        </div>
+                                                        <b class="align-self-start">0 €</b>
+                                                    </div>
+                                                    <div class="account-history-product-list-item including-tax">
+                                                        <b>Handling costs including tax</b>
+                                                        <b>0 €</b>
+                                                    </div>
+                                                    <div class="account-history-product-list-item total">
+                                                        <b>Total</b>
+                                                        <b>95,09 €</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row product-lst-class" style="padding-top: 20px;">
+                                            <div class="col-lg-2">
+                                                <span class="product-lst-content2">ZLGDCSWBD</span>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Order Date</span>
+                                                    <span>20/12/2022</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Total amount</span>
+                                                    <span>95,09 €</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2">
+                                                <div>
+                                                    <span>Payment method</span>
+                                                    <span><span>CB - Payment</span> <span>by credit card</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 status">
+                                                Done
+                                            </div>
+                                            <div class="col-lg-1 product-lst-content2 text-right">
+                                                
+                                                <div>
+                                                    <span>Billing</span>
+                                                    <span>-</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 product-lst-content2 text-right show-details">
+                                                <button type="button" style="background: #ffffff;color: #263F4F;">
+                                                    <span>Show Details</span>
+                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L5 5L9 1" stroke="black" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
                                     <div class="col-12">
                                         <h4 class="text-uppercase">Order Details History</h4>
                                     </div>
@@ -3871,7 +4389,7 @@
 
                                         </table>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
 

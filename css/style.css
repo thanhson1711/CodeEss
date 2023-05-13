@@ -3138,6 +3138,8 @@ select.form-select option:first-child {
 /* ---------------------------------------------------------
 ■ My Account Order Detail
 --------------------------------------------------------- */
+
+
 .order-detail-grid{
   background: #F1F1F1;
   border: 1px solid rgba(0, 0, 0, 0.15);
